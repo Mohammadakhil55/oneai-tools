@@ -1,0 +1,280 @@
+/*=========================================
+        LARGE DESKTOP (1400px+)
+=========================================*/
+
+@media (min-width:1400px){
+
+    .workspace{
+        padding:0 40px;
+    }
+
+    .tools-grid,
+    .project-grid,
+    .template-grid,
+    .model-grid,
+    .account-grid{
+        gap:30px;
+    }
+
+}
+
+/*=========================================
+        LAPTOP (1200px)
+=========================================*/
+
+@media (max-width:1200px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .search-box{
+        width:320px;
+    }
+
+}
+
+/*=========================================
+        TABLET (992px)
+=========================================*/
+
+@media (max-width:992px){
+
+    .sidebar{
+        position:fixed;
+        left:-280px;
+        width:280px;
+        transition:.3s;
+    }
+
+    .sidebar.active{
+        left:0;
+    }
+
+    .workspace{
+        width:100%;
+        margin-left:0;
+    }
+
+    .menu-btn{
+        display:flex;
+    }
+
+    .search-box{
+        width:250px;
+    }
+
+}
+
+/*=========================================
+        MOBILE (768px)
+=========================================*/
+
+@media (max-width:768px){
+
+    .topbar{
+
+        padding:15px;
+
+        gap:10px;
+
+    }
+
+    .search-box{
+
+        display:none;
+
+    }
+
+    .hero{
+
+        padding:40px 15px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .prompt-container{
+
+        padding:18px;
+
+    }
+
+    .prompt-container textarea{
+
+        min-height:120px;
+
+        font-size:15px;
+
+    }
+
+    .prompt-actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .prompt-left,
+    .prompt-right{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .prompt-left{
+
+        flex-wrap:wrap;
+
+    }
+
+    .generate-btn{
+
+        width:100%;
+
+        height:50px;
+
+        border-radius:12px;
+
+    }
+
+    .suggestions{
+
+        justify-content:flex-start;
+
+    }
+
+    .suggestions button{
+
+        font-size:13px;
+
+    }
+
+    .tools-grid,
+    .project-grid,
+    .template-grid,
+    .model-grid,
+    .account-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .pro-content{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .footer{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .footer-right{
+
+        justify-content:center;
+
+    }
+
+}
+
+/*=========================================
+        SMALL MOBILE (480px)
+=========================================*/
+
+@media (max-width:480px){
+
+    .hero h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .hero-badge{
+
+        font-size:12px;
+
+    }
+
+    .prompt-left button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .top-actions{
+
+        gap:8px;
+
+    }
+
+    .top-actions button{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .logo span{
+
+        font-size:20px;
+
+    }
+
+}
+
+/*=========================================
+        HIDE MENU BUTTON
+=========================================*/
+
+.menu-btn{
+
+    display:none;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    background:var(--card);
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+@media(max-width:992px){
+
+    .menu-btn{
+
+        display:flex;
+
+    }
+
+}

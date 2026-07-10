@@ -1,0 +1,406 @@
+/*=========================================
+            CARDS
+=========================================*/
+
+/*========== COMMON CARD ==========*/
+
+.project-card,
+.template-card,
+.model-card,
+.account-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:24px;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow);
+
+}
+
+.project-card:hover,
+.template-card:hover,
+.model-card:hover,
+.account-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*=========================================
+        RECENT PROJECTS
+=========================================*/
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:24px;
+
+}
+
+.project-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.project-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(108,99,255,.1);
+
+    color:var(--primary);
+
+    font-size:24px;
+
+}
+
+.project-content h3{
+
+    margin-bottom:6px;
+
+}
+
+.project-content p{
+
+    font-size:14px;
+
+}
+
+/*=========================================
+        TEMPLATES
+=========================================*/
+
+.template-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:20px;
+
+}
+
+.template-card{
+
+    text-align:center;
+
+    cursor:pointer;
+
+}
+
+.template-card i{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    background:rgba(108,99,255,.1);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    font-size:28px;
+
+    color:var(--primary);
+
+}
+
+.template-card h3{
+
+    font-size:17px;
+
+}
+
+/*=========================================
+            AI MODELS
+=========================================*/
+
+.model-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:22px;
+
+}
+
+.model-card{
+
+    position:relative;
+
+}
+
+.model-status{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    background:rgba(34,197,94,.15);
+
+    color:var(--success);
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.model-card h3{
+
+    margin-top:15px;
+
+    margin-bottom:10px;
+
+}
+
+/*=========================================
+            PRO BANNER
+=========================================*/
+
+.pro-banner{
+
+    margin-top:60px;
+
+}
+
+.pro-content{
+
+    background:var(--gradient-primary);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    color:#fff;
+
+}
+
+.pro-content h2{
+
+    color:#fff;
+
+    margin-bottom:10px;
+
+}
+
+.pro-content p{
+
+    color:#f8f8f8;
+
+}
+
+.pro-btn{
+
+    background:#fff;
+
+    color:var(--primary);
+
+    padding:15px 28px;
+
+    border-radius:16px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.pro-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================
+        ACCOUNT OVERVIEW
+=========================================*/
+
+.account-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+}
+
+.account-card{
+
+    text-align:center;
+
+}
+
+.account-card i{
+
+    width:70px;
+
+    height:70px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:18px;
+
+    border-radius:18px;
+
+    background:rgba(108,99,255,.1);
+
+    color:var(--primary);
+
+    font-size:28px;
+
+}
+
+.account-card h3{
+
+    margin-bottom:8px;
+
+}
+
+/*=========================================
+            FOOTER
+=========================================*/
+
+.footer{
+
+    margin-top:80px;
+
+    border-top:1px solid var(--border);
+
+    padding:30px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.footer-left h3{
+
+    margin-bottom:6px;
+
+}
+
+.footer-right{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-right a{
+
+    color:var(--text-light);
+
+}
+
+.footer-right a:hover{
+
+    color:var(--primary);
+
+}
+
+/*=========================================
+            MOBILE
+=========================================*/
+
+@media(max-width:768px){
+
+.project-grid,
+.template-grid,
+.model-grid,
+.account-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.pro-content{
+
+    text-align:center;
+
+    justify-content:center;
+
+}
+
+.footer{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.footer-right{
+
+    justify-content:center;
+
+}
+
+}

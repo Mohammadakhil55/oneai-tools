@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OneAI - AI Workspace</title>
+
+    <meta name="description"
+        content="OneAI - Create images, videos, code, documents and more with AI.">
+
+    <meta name="keywords"
+        content="AI, OneAI, Image Generator, Video Generator, AI Writer">
+
+    <meta name="author"
+        content="OneAI">
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/workspace.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ========================= -->
+    <!-- Sidebar -->
+    <!-- ========================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <span>OneAI</span>
+
+        </div>
+
+        <button class="new-workspace">
+
+            <i class="fa-solid fa-plus"></i>
+
+            New Workspace
+
+        </button>
+
+        <nav class="sidebar-nav">
+
+            <a href="#" class="active">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-image"></i>
+
+                <span>Image AI</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-video"></i>
+
+                <span>Video AI</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+                <span>PDF AI</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-code"></i>
+
+                <span>Code AI</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-pen"></i>
+
+                <span>Writer AI</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-music"></i>
+
+                <span>Audio AI</span>
+
+            </a>
+
+            <hr>
+
+            <a href="#">
+
+                <i class="fa-solid fa-clock"></i>
+
+                <span>History</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span>Favorites</span>
+
+            </a>
+
+            <a href="#">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>Settings</span>
+
+            </a>
+
+        </nav>
+
+        <div class="sidebar-user">
+
+            <img src="images/user.png"
+                 alt="User">
+
+            <div>
+
+                <h4>Guest User</h4>
+
+                <p>Free Plan</p>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- ========================= -->
+    <!-- Main Workspace -->
+    <!-- ========================= -->
+
+    <main class="workspace">
+
+        <!-- Topbar -->
+
+        <header class="topbar">
+
+            <button class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search AI tools...">
+
+            </div>
+
+            <div class="top-actions">
+
+                <button title="Theme">
+
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+
+                </button>
+
+                <button title="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+                <button title="Profile">
+
+                    <i class="fa-regular fa-user"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!-- ========================= -->
+        <!-- Workspace Content Starts -->
+        <!-- ========================= -->
+
+<!-- ========================================= -->
+<!-- HERO / WELCOME -->
+<!-- ========================================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-badge">
+
+            ✨ Powered by OneAI
+
+        </span>
+
+        <h1>
+
+            Create Anything with AI
+
+        </h1>
+
+        <p>
+
+            Generate images, videos, documents, code, audio, and more from one intelligent workspace.
+
+        </p>
+
+    </div>
+
+    <!-- ================= Prompt ================= -->
+
+    <div class="prompt-container">
+
+        <textarea
+            placeholder="Describe what you want to create..."></textarea>
+
+        <div class="prompt-actions">
+
+            <div class="prompt-left">
+
+                <button>
+
+                    <i class="fa-solid fa-paperclip"></i>
+
+                    Upload
+
+                </button>
+
+                <button>
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                    Voice
+
+                </button>
+
+                <button>
+
+                    <i class="fa-solid fa-globe"></i>
+
+                    Web
+
+                </button>
+
+            </div>
+
+            <div class="prompt-right">
+
+                <select>
+
+                    <option>OneAI Pro</option>
+
+                    <option>Creative</option>
+
+                    <option>Fast</option>
+
+                    <option>Vision</option>
+
+                </select>
+
+                <button class="generate-btn">
+
+                    <i class="fa-solid fa-arrow-up"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- SUGGESTED PROMPTS -->
+<!-- ========================================= -->
+
+<section class="suggestions">
+
+    <button>
+
+        🎨 Design a modern logo
+
+    </button>
+
+    <button>
+
+        🖼 Create a realistic AI image
+
+    </button>
+
+    <button>
+
+        🎬 Generate a cinematic video
+
+    </button>
+
+    <button>
+
+        📄 Summarize a PDF
+
+    </button>
+
+    <button>
+
+        💻 Explain Java code
+
+    </button>
+
+    <button>
+
+        📱 Create an Instagram post
+
+    </button>
+
+</section>
+
+<!-- ========================================= -->
+<!-- QUICK ACCESS -->
+<!-- ========================================= -->
+
+<section class="quick-access">
+
+    <div class="section-title">
+
+        <h2>
+
+            Popular AI Tools
+
+        </h2>
+
+        <a href="#">
+
+            View All
+
+        </a>
+
+    </div>
+
+    <div class="tools-grid">
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-image"></i>
+
+            <h3>Image Generator</h3>
+
+            <p>Create AI images from text prompts.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h3>Background Remover</h3>
+
+            <p>Erase image backgrounds instantly.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-expand"></i>
+
+            <h3>Image Upscaler</h3>
+
+            <p>Enhance image quality using AI.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-video"></i>
+
+            <h3>Video Generator</h3>
+
+            <p>Create videos from text prompts.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-file-pdf"></i>
+
+            <h3>Chat with PDF</h3>
+
+            <p>Ask questions about PDF documents.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3>Code Assistant</h3>
+
+            <p>Generate, debug and explain code.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-pen"></i>
+
+            <h3>AI Writer</h3>
+
+            <p>Generate blogs, emails and articles.</p>
+
+        </div>
+
+        <div class="tool-card">
+
+            <i class="fa-solid fa-music"></i>
+
+            <h3>Voice Generator</h3>
+
+            <p>Create realistic AI voices.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- RECENT PROJECTS -->
+<!-- ========================================= -->
+
+<section class="recent-projects">
+
+    <div class="section-title">
+
+        <h2>Recent Projects</h2>
+
+        <a href="history.html">View All</a>
+
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-image"></i>
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Fantasy Landscape</h3>
+
+                <p>AI Image • Today</p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-video"></i>
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Travel Promo</h3>
+
+                <p>AI Video • Yesterday</p>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-icon">
+
+                <i class="fa-solid fa-file-pdf"></i>
+
+            </div>
+
+            <div class="project-content">
+
+                <h3>Research Summary</h3>
+
+                <p>PDF AI • 2 Days Ago</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- QUICK TEMPLATES -->
+<!-- ========================================= -->
+
+<section class="templates">
+
+    <div class="section-title">
+
+        <h2>Quick Templates</h2>
+
+    </div>
+
+    <div class="template-grid">
+
+        <div class="template-card">
+
+            <i class="fa-solid fa-store"></i>
+
+            <h3>Business Logo</h3>
+
+        </div>
+
+        <div class="template-card">
+
+            <i class="fa-solid fa-photo-film"></i>
+
+            <h3>YouTube Thumbnail</h3>
+
+        </div>
+
+        <div class="template-card">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <h3>Resume</h3>
+
+        </div>
+
+        <div class="template-card">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3>Website</h3>
+
+        </div>
+
+        <div class="template-card">
+
+            <i class="fa-solid fa-pen-fancy"></i>
+
+            <h3>Blog Article</h3>
+
+        </div>
+
+        <div class="template-card">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <h3>Voice Over</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FEATURED AI MODELS -->
+<!-- ========================================= -->
+
+<section class="models">
+
+    <div class="section-title">
+
+        <h2>AI Models</h2>
+
+    </div>
+
+    <div class="model-grid">
+
+        <div class="model-card">
+
+            <span class="model-status">Online</span>
+
+            <h3>OneAI Smart</h3>
+
+            <p>Balanced speed and quality.</p>
+
+        </div>
+
+        <div class="model-card">
+
+            <span class="model-status">Online</span>
+
+            <h3>OneAI Vision</h3>
+
+            <p>Best for image understanding.</p>
+
+        </div>
+
+        <div class="model-card">
+
+            <span class="model-status">Online</span>
+
+            <h3>OneAI Creative</h3>
+
+            <p>Optimized for creative content.</p>
+
+        </div>
+
+        <div class="model-card">
+
+            <span class="model-status">Pro</span>
+
+            <h3>OneAI Ultra</h3>
+
+            <p>Highest quality AI generation.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- ONEAI PRO -->
+<!-- ========================================= -->
+
+<section class="pro-banner">
+
+    <div class="pro-content">
+
+        <div>
+
+            <h2>Upgrade to OneAI Pro</h2>
+
+            <p>
+
+                Unlock premium AI models, unlimited generations,
+                faster processing and priority support.
+
+            </p>
+
+        </div>
+
+        <a href="pricing.html" class="pro-btn">
+
+            Upgrade Now
+
+        </a>
+
+    </div>
+
+</section>
+<!-- ========================================= -->
+<!-- ACCOUNT OVERVIEW -->
+<!-- ========================================= -->
+
+<section class="account-overview">
+
+    <div class="section-title">
+
+        <h2>Your Account</h2>
+
+        <a href="profile.html">Manage</a>
+
+    </div>
+
+    <div class="account-grid">
+
+        <div class="account-card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>Guest User</h3>
+
+            <p>Current Plan: Free</p>
+
+        </div>
+
+        <div class="account-card">
+
+            <i class="fa-solid fa-coins"></i>
+
+            <h3>Credits</h3>
+
+            <p>120 Credits Remaining</p>
+
+        </div>
+
+        <div class="account-card">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <h3>History</h3>
+
+            <p>38 AI Generations</p>
+
+        </div>
+
+        <div class="account-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Favorites</h3>
+
+            <p>12 Saved Projects</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FOOTER -->
+<!-- ========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-left">
+
+        <h3>OneAI</h3>
+
+        <p>
+
+            Create with Artificial Intelligence.
+
+        </p>
+
+    </div>
+
+    <div class="footer-right">
+
+        <a href="about.html">
+
+            About
+
+        </a>
+
+        <a href="contact.html">
+
+            Contact
+
+        </a>
+
+        <a href="pricing.html">
+
+            Pricing
+
+        </a>
+
+        <a href="#">
+
+            Privacy
+
+        </a>
+
+        <a href="#">
+
+            Terms
+
+        </a>
+
+    </div>
+
+</footer>
+
+</main>
+
+</div>
+
+<!-- ========================================= -->
+<!-- JAVASCRIPT -->
+<!-- ========================================= -->
+
+<script src="js/theme.js"></script>
+
+<script src="js/sidebar.js"></script>
+
+<script src="js/search.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
